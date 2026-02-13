@@ -1,0 +1,15 @@
+{
+    "channel_names": {
+        "0": "PET",
+        "1": "PET"
+    },
+    "labels": {
+        "background": 0,
+        "tumor": 1
+    },
+    "numTraining": 1159,
+    "file_ending": ".nii.gz",
+    "name": "Combined",
+    "reference": "Private dataset",
+    "description": "AutoPET3 Multicenter Multitracer Generalization"
+}
