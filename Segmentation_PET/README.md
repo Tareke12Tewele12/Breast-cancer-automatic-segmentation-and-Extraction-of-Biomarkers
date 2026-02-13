@@ -14,7 +14,7 @@ This GitHub repository contains the following components:
 **Authors:** Tewele W. Tareke (1), Nérée Payan (1,2), Alexandre Cochet (1,2), Laurent Arnould (3), Benoit Presles (1), Jean-Marc Vrigneaud (1,2), Fabrice Meriaudeau (1), Alain Lalande (1).  
 **Link:** [https://arxiv.org/abs/2502.04083](https://arxiv.org/abs/2502.04083)
 
-## Dual-Channel CW nnU-Net Model Weights
+## Bench mark nnU-Net Model Weights
 The trained model weights are available via Google Drive:  
 [Access Model Weights Here](https://drive.google.com/drive/u/2/folders/13OBjcDwZmER5vD73jyCqx-0Ie83ceJdA)
 
