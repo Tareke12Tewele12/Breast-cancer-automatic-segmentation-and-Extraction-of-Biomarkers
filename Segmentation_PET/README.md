@@ -6,6 +6,7 @@ This project focuses on **Automated Lesion Segmentation in PET imaging**. It is 
 This GitHub repository contains the following components:
 * **`compound_loss.py`**: Implementation of the compound loss function.
 * **`process.py`**: Scripts for the inference and segmentation process.
+ * **`Biomarkers_change`** biomarkers extractions and changes
 * **`requirements.txt`**: List of necessary dependencies and libraries.
 * **Data Samples**: Examples of raw PET images and their corresponding segmented outputs.
 
@@ -18,6 +19,41 @@ This GitHub repository contains the following components:
 The trained model weights are available via Google Drive:  
 [Access Model Weights Here](https://drive.google.com/drive/u/2/folders/13OBjcDwZmER5vD73jyCqx-0Ie83ceJdA)
 
+
+.......
+
+Baseline model
+↓
+Fine tune on 12 follow up (Strategy A)
+↓
+Baseline model
+↓
+Active learning selection (7 cases)
+↓
+Fine tune (Strategy B)
+↓
+Compare Dice, IoU, HD95
+
+## This may help to understand the project orchestration
+
+│
+├── main.py
+├── config.py
+│
+├── losses/
+│   └── combined_loss.py
+│
+├── trainers/
+│   └── custom_trainers.py
+│
+├── preprocessing/
+│   └── custom_preprocessing.py
+│
+├── finetuning/
+│   └── active_finetune.py
+│
+└── utils/
+    └── active_learning.py
 ---
 
 ## Contact

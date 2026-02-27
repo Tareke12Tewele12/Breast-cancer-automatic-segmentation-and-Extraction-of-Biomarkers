@@ -9,22 +9,19 @@ import torch
 class Autopet_baseline:
 
     def __init__(self):
-        """
-        Write your own input validators here
-        Initialize your model etc.
-        """
+        
         # set some paths and parameters
         # according to the specified grand-challenge interfaces
         self.input_path = "/input/"
         # according to the specified grand-challenge interfaces
         self.output_path = "/output/images/automated-petct-lesion-segmentation/"
         self.nii_path = (
-            "/opt/algorithm/nnUNet_raw_data_base/nnUNet_raw_data/Task001_TCIA/imagesTs"
+            "/opt/algorithm/nnUNet_raw_data_base/nnUNet_raw_data/imagesTs"
         )
         self.result_path = (
-            "/opt/algorithm/nnUNet_raw_data_base/nnUNet_raw_data/Task001_TCIA/result"
+            "/opt/algorithm/nnUNet_raw_data_base/nnUNet_raw_data/result"
         )
-        self.nii_seg_file = "TCIA_001.nii.gz"
+        self.nii_seg_file = "WB_CTAC_Tardif_1.nii.gz"
         self.output_path_category = "/output/data-centric-model.json"
         pass
 
@@ -55,7 +52,7 @@ class Autopet_baseline:
     def load_inputs(self):
         """
         Read from /input/
-        Check https://grand-challenge.org/algorithms/interfaces/
+        data source
         """
         ct_mha = os.listdir(os.path.join(self.input_path, "images/ct/"))[0]
         pet_mha = os.listdir(os.path.join(self.input_path, "images/pet/"))[0]
@@ -63,18 +60,18 @@ class Autopet_baseline:
 
         self.convert_mha_to_nii(
             os.path.join(self.input_path, "images/ct/", ct_mha),
-            os.path.join(self.nii_path, "TCIA_001_0000.nii.gz"),
+            os.path.join(self.nii_path, "WB_CTAC_Tardif_1.nii.gz"),
         )
         self.convert_mha_to_nii(
             os.path.join(self.input_path, "images/pet/", pet_mha),
-            os.path.join(self.nii_path, "TCIA_001_0001.nii.gz"),
+            os.path.join(self.nii_path, "WB_CTAC_Tardif_2.nii.gz"),
         )
         return uuid
 
     def write_outputs(self, uuid):
         """
         Write to /output/
-        Check https://grand-challenge.org/algorithms/interfaces/
+        To output folder
         """
         os.makedirs(os.path.dirname(self.output_path), exist_ok=True)
         self.convert_nii_to_mha(
@@ -94,9 +91,7 @@ class Autopet_baseline:
             check=True,
         )
         print(cproc)
-        # since nnUNet_predict call is split into prediction and postprocess, a pre-mature exit code is received but
-        # segmentation file not yet written. This hack ensures that all spawned subprocesses are finished before being
-        # printed.
+       
         print("Prediction finished")
 
     def save_datacentric(self, value: bool):
