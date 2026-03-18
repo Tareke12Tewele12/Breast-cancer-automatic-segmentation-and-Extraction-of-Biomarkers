@@ -1,8 +1,3 @@
-Below is a **clean, detailed, and well-written README.md** version of your content. It is structured for a research repository and explains the project clearly.
-
-You can copy this directly into your `README.md`.
-
----
 
 # PETLesionSeg – PET (Baseline + Follow-up) Segmentation
 
@@ -222,20 +217,13 @@ This framework can be used for:
 
 ## Contact
 
-Dr. Tewele Weletnsea Tareke
+Tewele Weletnsea Tareke (ph.D)
 University of Burgundy, France
 
 Email:
 [tewele-weletnsea.tareke@u-bourgogne.fr](mailto:tewele-weletnsea.tareke@u-bourgogne.fr)
 [tewetyy@gmail.com](mailto:tewetyy@gmail.com)
 
----
-
-If you want, I can next:
-
-* Add figures (pipeline diagram or sample segmentation results)
-* Convert this into a publication-style GitHub page
-* Add badges (DOI, Python version, license)
 * Make a shorter version for recruiters
 
 Just tell me.
