@@ -1,6 +1,6 @@
-# autoPET Segmentation
+# PETLesionSeg--PET (Bl + Fu) Segmentation
 
-This project focuses on **Automated Lesion Segmentation in PET imaging**. It is developed as part of the European Union’s **Marie Skłodowska-Curie Doctoral Network Actions** (HORIZON-MSCA-2021-DN-01), under grant agreement No. 101073222.
+This project focuses on **Automated Lesion Segmentation in PET imaging and Extraction of important biomarkers**. It is developed as part of the European Union’s **Marie Skłodowska-Curie Doctoral Network Actions** (HORIZON-MSCA-2021-DN-01), under grant agreement No. 101073222.
 
 ## Repository Overview
 This GitHub repository contains the following components:
