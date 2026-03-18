@@ -223,7 +223,3 @@ University of Burgundy, France
 Email:
 [tewele-weletnsea.tareke@u-bourgogne.fr](mailto:tewele-weletnsea.tareke@u-bourgogne.fr)
 [tewetyy@gmail.com](mailto:tewetyy@gmail.com)
-
-* Make a shorter version for recruiters
-
-Just tell me.
